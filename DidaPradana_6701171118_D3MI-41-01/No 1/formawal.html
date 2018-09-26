@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome</title>
+</head>
+<body>                                                                                                                                                                                                                      
+	<form action="proses.php" method="post" enctype="multipart/form-data">
+		<table>
+			<tr>
+				<td>Nama</td>
+				<td>:</td>
+				<td><input type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>Genre Favorit</td>
+				<td>:</td>
+				<td>
+					<br><br>
+					<input type="checkbox" name="hobi[]" value="Horor">&nbsp;&nbsp;Horor<br>
+					<input type="checkbox" name="hobi[]" value="SCI FI">&nbsp;&nbsp;SCI FI<br>
+					<input type="checkbox" name="hobi[]" value="Comedy">&nbsp;&nbsp;WESTERN<br>
+					<input type="checkbox" name="hobi[]" value="Adventure">&nbsp;&nbsp;Adventure<br><br><br>
+				</td>
+			</tr>
+			<tr>
+				<td>Tempat Wisata</td>
+				<td>:</td>
+				<td>
+					<input type="checkbox" name="wisata[]" value="Bali">&nbsp;&nbsp;Bali<br>
+					<input type="checkbox" name="wisata[]" value="Sumatera">&nbsp;&nbsp;Sumatera Barat<br>
+					<input type="checkbox" name="wisata[]" value="Yogyakarta">&nbsp;&nbsp;Yogyakarta<br>
+					<input type="checkbox" name="wisata[]" value="Samarinda">&nbsp;&nbsp;Samarinda<br><br><br>
+				</td>
+			</tr>
+			<tr>
+				<td>Gambar</td>
+				<td>:</td>
+				<td><input type="file" name="gambar" id="gambar"></td>
+			</tr>
+			<tr>
+				<td colspan="3"><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a href="login.php">Log Out</a>
+</body>
+</html>
